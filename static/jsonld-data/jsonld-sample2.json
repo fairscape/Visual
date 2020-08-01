@@ -1,0 +1,42 @@
+{
+    "@context": {
+      "@vocab": "http://schema.org/",
+      "eg": "http://purl.org/evi/"
+    },
+    "@type": "Project",
+    "@id": "http://ors.uvadcos.io/ark:99999/repl.moss.2017",
+    "name": "Figure Replication of Moss 2017",
+    "founder": {
+      "@type": "Person",
+      "@id": "https://orcid.org/0000-0003-0384-8499",
+      "name": "Max Levinson"
+    },
+    "description": "Replication of Cardiorespiratory dynamics..Moorman",
+    "member": [
+        {
+          "@type": "Person",
+          "@id": "https://orcid.org/0000-0002-1103-3882",
+          "name": "Justin Niestroy",
+          "worksfor": {
+                       "@type": "Person",
+                       "@id": "https://orcid.org/SOMETHING",
+                       "name": "Tim Clark",
+                       "livesIn": {
+                                    "@type": "City",
+                                    "@id": "https://www.visitcharlottesville.org/",
+                                    "name": "Charlottesville"
+                                   }
+                      }
+        },
+        {
+          "@type": "Person",
+          "@id": "https://orcid.org/0000-0003-0384-8499",
+          "name": "Max Levinson",
+          "worksfor": {
+                       "@type": "Person",
+                       "@id": "https://orcid.org/SOMETHING",
+                       "name": "Tim Clark"
+                      }
+        }
+    ]
+}

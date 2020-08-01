@@ -1,0 +1,24 @@
+{
+    "@context": {"@vocab": "http://schema.org/"},
+    "@type": "Project",
+    "@id": "http://ors.uvadcos.io/ark:99999/repl.moss.2017",
+    "name": "Figure Replication of Moss 2017",
+    "founder": {
+      "@type": "Person",
+      "@id": "https://orcid.org/0000-0003-0384-8499",
+      "name": "Max Levinson"
+    },
+    "description": "Replication of 'Cardiorespiratory dynamics...' Moss, Moorman",
+    "member": [
+        {
+          "@type": "Person",
+          "@id": "https://orcid.org/0000-0002-1103-3882",
+          "name": "Justin Niestroy"
+        },
+        {
+          "@type": "Person",
+          "@id": "https://orcid.org/0000-0003-0384-8499",
+          "name": "Max Levinson"
+        }
+    ]
+}

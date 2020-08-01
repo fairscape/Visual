@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Visualize JSON-LD EvidenceGraph</title>
+    <!--link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"-->
+    <link rel="stylesheet" href=../static/css/style.css>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- cytoscape-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.15.1/cytoscape.min.js"></script>
+    <!-- cola -->
+    <script src="https://cdn.jsdelivr.net/npm/webcola@3.4.0/WebCola/cola.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/cytoscape-cola@2.3.1/cytoscape-cola.js"></script>
+    <!-- dagre layout -->
+    <script src="https://unpkg.com/dagre@0.7.4/dist/dagre.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/cytoscape-dagre@2.2.2/cytoscape-dagre.min.js"></script>
+    <!-- klay layout -->
+    <script src="https://unpkg.com/klayjs@0.4.1/klay.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/cytoscape-klay@3.1.3/cytoscape-klay.min.js"></script>
+    <!-- context menu -->
+    <script src="https://cdn.jsdelivr.net/npm/@lsvih/cytoscape-cxtmenu@3.1.6/cytoscape-cxtmenu.min.js"></script>
+    <!-- cytoscape-popper -->
+    <script src="https://unpkg.com/popper.js@1.16.0/dist/umd/popper.js"></script>
+    <script src="https://cytoscape.org/cytoscape.js-popper/cytoscape-popper.js"></script>
+    <!--script src="https://unpkg.com/tippy.js@5.2.1/dist/tippy-bundle.iife.min.js"></script-->
+    <script src="https://unpkg.com/tippy.js@5"></script>
+
+    <!-- bootstrap libraries -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
+</head>
+<body>
+<div id="cy"></div>
+<script>
+    let cytoscape_elements = fetch("https://clarklab.uvarc.io/viz/graph")
+        .then(response => response.json())
+        .then((data) => {
+            return data
+        });
+    //console.log("nodes and edges: \n", cytoscape_elements);
+
+
+    var cy = cytoscape({
+        container: document.getElementById('cy'),
+        autounselectify: true,
+        boxSelectionEnabled: false,
+        layout: {
+            name: 'dagre' // other layouts: cola, klay
+        },
+        elements: cytoscape_elements,
+        style: [
+            {
+                selector: 'node',
+                style: {
+                    width: 'label', // label uses auto width of the attribute label: data(NODE_ATTRIBUTE)
+                    height: 'label', // same as width above
+                    shape: 'round-rectangle',
+                    'background-color': '#45b39d',
+                    //'background-blacken': '-0.5', // -ve value whitens the background
+                    //'background-opacity': '0.8',
+                    //'background-fill': 'linear-gradient',
+                    'border-width': 2,
+                    'border-style': 'double',
+                    'border-color': '#563f46',
+                    'border-opacity': 0.9,
+                    'padding': '2px',
+                    'text-wrap': 'wrap',
+                    'text-max-width': '50', // cutoff width for lengthy content, works with text-overflow-wrap
+                    'text-overflow-wrap': 'anywhere',  // needs'whitespace' will wrap around whitespace
+                    'text-halign': 'center',  // placement of content relative to shape
+                    'text-valign': 'center',  // placement of content relative to shape
+                    'font-family': 'sans-serif',
+                    'font-size': '4px',
+                    label: 'data(name)',  // data(name)
+                    //content: 'data(href)' // alternative to label: data(NODE_ATTRIBUTE)
+                }
+            },
+            {
+                selector: 'edge',
+                style: {
+                    width: 2,
+                    'line-color': '#baaaaa',
+                    'curve-style': 'bezier',
+                    'target-arrow-color': '#032d2d',
+                    'target-arrow-shape': 'triangle',
+                    'text-opacity': 0.9,
+                    'font-family': 'sans-serif',
+                    'font-size': '14px',
+                    'font-style': 'normal',
+                    'font-weight': 'normal',
+                    //'text-rotation': 'autorotate',  // not working, sits on top of the edge
+                    //label: 'data(label)'
+                }
+            },
+            { // assign node color based on their type
+                selector: 'node[type = "http://schema.org/Dataset"]',
+                style: {
+                    'background-color': '#5ec9c9'
+                }
+            },
+            {
+                selector: 'node[type = "http://w3id.org/EVI#Computation"]',
+                style: {
+                    'background-color': '#e1a4c2'
+                }
+            },
+            {
+                selector: 'edge.hover',
+                css: {
+                    'z-compound-depth': 'top',
+                    'line-color': '#FF0000',
+                    'font-weight': 'normal',
+                    'font-size': '18px',
+                    label: 'data(label)'
+                }
+            },
+            {
+                selector: 'node.hover',
+                css: {
+                    'z-compound-depth': 'top', // overlaps surrounding node when hovered over
+                    'border-width': 2,
+                    'border-style': 'double',
+                    'border-color': '#c64c71',
+                    'border-opacity': 1.0,
+                    'padding': '5px',
+                    'text-wrap': 'wrap',
+                    'text-max-width': '180', // cutoff width for lengthy content, works with text-overflow-wrap
+                    'text-overflow-wrap': 'anywhere',  // needs'whitespace' will wrap around whitespace
+                    'text-halign': 'center',  // placement of content relative to shape
+                    'text-valign': 'center',  // placement of content relative to shape
+                    'font-family': 'sans-serif',
+                    'font-size': '18px',
+                    //'background-color': '#fff',
+                    //label: 'data(type)'
+                    //label: 'data(info)'
+                }
+            }
+        ]
+    });
+    // expand-collapse of successor nodes when tapped [courtesy stackoverflow]
+    cy.on('tap', 'node', function () {
+        if (this.scratch().restData == null) {
+            // Save node data and remove
+            this.scratch({
+                restData: this.successors().targets().remove()
+            });
+        } else {
+            // Restore the removed nodes from saved data
+            this.scratch().restData.restore();
+            this.scratch({
+                restData: null
+            });
+        }
+    });
+    /*
+        // Open SOME_URI from 'href': 'SOME_URI' when a node is tapped
+        cy.on('tap', 'node', function () {
+            try {
+                // browser may block popup
+                window.open(this.data('href'));
+            } catch (e) {
+                window.location.href = this.data('href');
+            }
+        })
+    */
+    // open context-menu on right-click on nodes
+    cy.cxtmenu({
+        selector: 'node, edge',
+
+        commands: [
+            /*  {
+                  content: '<span class="fa fa-flash fa-2x"></span>',
+                  select: function (ele) {
+                      console.log(ele.id());
+                  }
+              },
+
+            {
+                content: '<span class="fa fa-star fa-2x"></span>',
+                select: function (ele) {
+                    console.log(ele.data('name'));
+                },
+                enabled: false
+            },
+*/
+            {
+                content: 'isA',
+                select: function (ele) {
+                    console.log(ele.position());
+                    try {
+                        // browser may block popup
+                        window.open(ele.data('href'));
+                    } catch (e) {
+                        window.location.href = ele.data('href');
+                    }
+                }
+            },
+            {
+                content: 'PID',
+                select: function (ele) {
+                    console.log(ele.position());
+                    try {
+                        // browser may block popup
+                        window.open(ele.data('href'));
+                    } catch (e) {
+                        window.location.href = ele.data('href');
+                    }
+                }
+            }
+        ]
+    });
+
+    // mouseover events for edges
+    cy.on('mouseover', 'edge', function (e) {
+        e.target.addClass('hover');
+    });
+    cy.on('mouseout', 'edge', function (e) {
+        e.target.removeClass('hover');
+    });
+
+    // mouseover events nodes
+    let div;  // element to bind the popup
+    let div2;
+    let tip;
+    let tippyInstance;
+    cy.on('mouseover', 'node', function (e) {
+        let targetNode = e.target;
+        targetNode.addClass('hover');
+        //showPopup(targetNode); // working only as a html
+        //makePopper(targetNode); // working as a popper, close enough to tippy but not perfect
+        //a = targetNode.data('id'); get id of the node
+
+        let type = targetNode.data('type');
+        let typeSuffix = targetNode.data('type').substring(targetNode.data('type').lastIndexOf('/') + 1);
+        let nodeContent = '<h6>' + '<span class="badge badge-info">' + 'isA: ' + '<a class="text-warning" href="' + type + '">' + type + '</a>' + '</span>' + '<br>'
+                    + '<span class="badge badge-info">' + 'PID:  ' + '<a class="text-warning" href="' + targetNode.data('href') + '">' + targetNode.data('href') + '</a>' + '</span>' + '</h6>';
+        tippyInstance = makeTippy(targetNode, nodeContent);
+
+
+        console.log(tippyInstance);
+        tippyInstance.show();
+    });
+
+    cy.on('mouseout', 'node', function (e) {
+        e.target.removeClass('hover');
+        div2.remove();
+        div.remove();
+        tippyInstance.hide();  // or tip.hide();
+    });
+
+    // does not use the cytoscape-popper, just html representation on the page
+    function showPopup(targetNode) {
+
+        let type = targetNode.data('type');
+        let typeSuffix = targetNode.data('type').substring(targetNode.data('type').lastIndexOf('/') + 1);
+
+        div = document.createElement('div');
+        //div.className = "badge badge-secondary";
+        div.innerHTML = '<h5>' + '<span class="badge badge-info">' + 'type: ' + '<a class="nav-link active" href="' + type + '">' + type + '</a>' + '</span>' + '<br>'
+            + '<span class="badge badge-info">' + 'PID:  ' + targetNode.data('href') + '</span>' + '</h5>';
+        //div.innerHTML += '<h5>' + '<span class="badge badge-info">' + 'DOI:  ' + targetNode.data('href') + '</span>' + '</h5>';
+        //div.innerHTML += '<button data-tippy-content="Tooltip">' + 'Type: ' + type + '</button>' + '<br>';
+        //div.innerHTML += '<button data-tippy-content="Tooltip">' + '@id: ' + targetNode.data('href') + '</button>';
+        //div.id = "currentnode";
+        document.body.appendChild(div);
+    }
+
+
+    function makePopper(targetNode) {
+        let type = targetNode.data('type');
+        let typeSuffix = targetNode.data('type').substring(targetNode.data('type').lastIndexOf('/') + 1);
+        let popper1 = targetNode.popper({
+            content: () => {
+                div = document.createElement('div');
+                div.className = "card";
+                div.innerHTML = '<h6>' + '<span class="badge badge-info">' + 'type: ' + '<a class="text-warning" href="' + type + '">' + type + '</a>' + '</span>' + '<br>'
+                    + '<span class="badge badge-info">' + 'PID:  ' + '<a class="text-warning" href="' + targetNode.data('href') + '">' + targetNode.data('href') + '</a>' + '</span>' + '</h6>';
+                document.body.appendChild(div);
+                return div;
+            },
+            popper: {}
+        });
+        let update = () => {
+            popper1.scheduleUpdate();
+        }
+        targetNode.on('position', update);
+        cy.on('pan zoom resize', update);
+    }
+
+    var makeTippy = function (targetNode, text) {
+        var ref = targetNode.popperRef();
+
+        // unfortunately, a dummy element must be passed
+        // as tippy only accepts a dom element as the target
+        // https://github.com/atomiks/tippyjs/issues/661
+        div = document.createElement('div');  // dummyDomEle
+
+        tip = tippy(div, {
+            onCreate: function (instance) { // mandatory
+                // patch the tippy's popper reference so positioning works
+                // https://atomiks.github.io/tippyjs/misc/#custom-position
+                instance.popperInstance.reference = ref;
+            },
+            lazy: false, // mandatory
+            trigger: 'manual', // mandatory
+            // dom element inside the tippy:
+            content: function () { // function can be better for performance
+                div2 = document.createElement('div');  // holds content for diaplay
+                div2.innerHTML = text;
+                return div2;
+            },
+            // your own preferences:
+            arrow: true,
+            //placement: 'bottom',
+            hideOnClick: true,
+            multiple: true,
+            sticky: true,
+            //interactiveBorder: 10,
+            //interactiveDebounce: 3000,
+            // if interactive:
+            interactive: true,
+            appendTo: document.body // or append dummyDomEle to document.body
+        });
+        return tip;
+    };
+
+
+</script>
+
+</body>
+</html>

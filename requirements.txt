@@ -1,0 +1,4 @@
+pandas~=1.0.5
+PyLD~=2.0.2
+Flask~=1.1.2
+requests

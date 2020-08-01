@@ -1,0 +1,859 @@
+{
+  "@context": {
+    "@vocab": "http://schema.org/",
+    "eg": "http://purl.org/evi/"
+  },
+  "@id": "ark:99999/89fbbec5-cef9-47a2-b9c1-0949c1a0b3f9",
+  "@type": "Dataset",
+  "eg:generatedBy": {
+    "@id": "ark:99999/ff5931f2-269b-4ce8-937b-a9c2a5fdc4b7",
+    "@type": "eg:Computation",
+    "eg:usedDataset": [
+      {
+        "@id": "ark:99999/b59f7d36-bcf9-4822-b9cb-2822b193aa6f",
+        "@type": "Dataset",
+        "eg:generatedBy": {
+          "@id": "ark:99999/13e15dc6-6063-4b6c-b94e-5a6f5c3742dd",
+          "@type": "eg:Computation",
+          "eg:usedDataset": {
+            "@id": "ark:99999/b585df03-d73a-443f-b9f5-4c713bbd9901",
+            "@type": "Dataset",
+            "author": "Michael Notter",
+            "name": "sub-01_t1w_preproc.nii.gz"
+          },
+          "eg:usedSoftware": "ark:99999/109e8c56-caa1-4c6c-a073-e0b02f982bc6",
+          "name": "Computation sub-01_t1w_preproc_brain.nii.gz"
+        },
+        "name": "sub-01_t1w_preproc_brain.nii.gz"
+      },
+      {
+        "@id": "ark:99999/5d7c5255-9392-42bc-94c8-5d80f2873e5c",
+        "@type": "Dataset",
+        "eg:generatedBy": {
+          "@id": "ark:99999/e2ab4eb5-858d-474f-9b2d-caead71af8c7",
+          "@type": "eg:Computation",
+          "eg:usedDataset": [
+            {
+              "@id": "ark:99999/b59f7d36-bcf9-4822-b9cb-2822b193aa6f",
+              "@type": "Dataset",
+              "eg:generatedBy": {
+                "@id": "ark:99999/13e15dc6-6063-4b6c-b94e-5a6f5c3742dd",
+                "@type": "eg:Computation",
+                "eg:usedDataset": {
+                  "@id": "ark:99999/b585df03-d73a-443f-b9f5-4c713bbd9901",
+                  "@type": "Dataset",
+                  "author": "Michael Notter",
+                  "name": "sub-01_t1w_preproc.nii.gz"
+                },
+                "eg:usedSoftware": "ark:99999/109e8c56-caa1-4c6c-a073-e0b02f982bc6",
+                "name": "Computation sub-01_t1w_preproc_brain.nii.gz"
+              },
+              "name": "sub-01_t1w_preproc_brain.nii.gz"
+            },
+            {
+              "@id": "ark:99999/f82b97ff-8e23-45f0-b34f-a2569b2aff74",
+              "@type": "Dataset",
+              "eg:generatedBy": {
+                "@id": "ark:99999/3092e41c-0351-4161-83e9-b46d42be2e35",
+                "@type": "eg:Computation",
+                "eg:usedDataset": [
+                  {
+                    "@id": "ark:99999/ea9c938a-cc49-4946-a495-603cd690891e",
+                    "@type": "Dataset",
+                    "eg:generatedBy": {
+                      "@id": "ark:99999/96adc94e-982f-498e-b8af-4340c59d84f5",
+                      "@type": "eg:Computation",
+                      "eg:usedDataset": [
+                        {
+                          "@id": "ark:99999/b59f7d36-bcf9-4822-b9cb-2822b193aa6f",
+                          "@type": "Dataset",
+                          "eg:generatedBy": {
+                            "@id": "ark:99999/13e15dc6-6063-4b6c-b94e-5a6f5c3742dd",
+                            "@type": "eg:Computation",
+                            "eg:usedDataset": {
+                              "@id": "ark:99999/b585df03-d73a-443f-b9f5-4c713bbd9901",
+                              "@type": "Dataset",
+                              "author": "Michael Notter",
+                              "name": "sub-01_t1w_preproc.nii.gz"
+                            },
+                            "eg:usedSoftware": "ark:99999/109e8c56-caa1-4c6c-a073-e0b02f982bc6",
+                            "name": "Computation sub-01_t1w_preproc_brain.nii.gz"
+                          },
+                          "name": "sub-01_t1w_preproc_brain.nii.gz"
+                        },
+                        {
+                          "@id": "ark:99999/e016b784-34da-451f-8e2b-e883b2674f00",
+                          "@type": "Dataset",
+                          "eg:generatedBy": {
+                            "@id": "ark:99999/7857dc3f-68ef-4675-89b2-4ae624fb9d35",
+                            "@type": "eg:Computation",
+                            "eg:usedDataset": {
+                              "@id": "ark:99999/fc43750a-83b1-4556-9557-748fc3b2526b",
+                              "@type": "Dataset",
+                              "eg:generatedBy": {
+                                "@id": "ark:99999/f5c430f9-f381-4d9d-9490-775f58168bd1",
+                                "@type": "eg:Computation",
+                                "eg:usedDataset": {
+                                  "@id": "ark:99999/0b843e47-ea12-40e0-a804-7b69de1873e7",
+                                  "@type": "Dataset",
+                                  "author": "Michael Notter",
+                                  "name": "sub-01_ses-test_task-fingerfootlips_bold.nii.gz"
+                                },
+                                "eg:usedSoftware": "ark:99999/a2721618-758a-407a-8524-ee895b9fedfd",
+                                "name": "Computation sub-01_ses-test_task-fingerfootlips_bold_roi.nii"
+                              },
+                              "name": "sub-01_ses-test_task-fingerfootlips_bold_roi.nii"
+                            },
+                            "eg:usedSoftware": "ark:99999/5959320e-e64a-4838-abc4-fa23a23fbd34",
+                            "name": "Computation sub-01_ses-test_task-fingerfootlips_bold_roi_mcf.nii_mean_reg.nii"
+                          },
+                          "name": "sub-01_ses-test_task-fingerfootlips_bold_roi_mcf.nii_mean_reg.nii"
+                        }
+                      ],
+                      "eg:usedSoftware": "ark:99999/45f4b9a9-f14d-4180-ae99-39fe4a9f712d",
+                      "name": "Computation sub-01_ses-test_task-fingerfootlips_bold_roi_mcf.nii_mean_reg_flirt.mat"
+                    },
+                    "name": "sub-01_ses-test_task-fingerfootlips_bold_roi_mcf.nii_mean_reg_flirt.mat"
+                  },
+                  {
+                    "@id": "ark:99999/b585df03-d73a-443f-b9f5-4c713bbd9901",
+                    "@type": "Dataset",
+                    "author": "Michael Notter",
+                    "name": "sub-01_t1w_preproc.nii.gz"
+                  },
+                  {
+                    "@id": "ark:99999/e016b784-34da-451f-8e2b-e883b2674f00",
+                    "@type": "Dataset",
+                    "eg:generatedBy": {
+                      "@id": "ark:99999/7857dc3f-68ef-4675-89b2-4ae624fb9d35",
+                      "@type": "eg:Computation",
+                      "eg:usedDataset": {
+                        "@id": "ark:99999/fc43750a-83b1-4556-9557-748fc3b2526b",
+                        "@type": "Dataset",
+                        "eg:generatedBy": {
+                          "@id": "ark:99999/f5c430f9-f381-4d9d-9490-775f58168bd1",
+                          "@type": "eg:Computation",
+                          "eg:usedDataset": {
+                            "@id": "ark:99999/0b843e47-ea12-40e0-a804-7b69de1873e7",
+                            "@type": "Dataset",
+                            "author": "Michael Notter",
+                            "name": "sub-01_ses-test_task-fingerfootlips_bold.nii.gz"
+                          },
+                          "eg:usedSoftware": "ark:99999/a2721618-758a-407a-8524-ee895b9fedfd",
+                          "name": "Computation sub-01_ses-test_task-fingerfootlips_bold_roi.nii"
+                        },
+                        "name": "sub-01_ses-test_task-fingerfootlips_bold_roi.nii"
+                      },
+                      "eg:usedSoftware": "ark:99999/5959320e-e64a-4838-abc4-fa23a23fbd34",
+                      "name": "Computation sub-01_ses-test_task-fingerfootlips_bold_roi_mcf.nii_mean_reg.nii"
+                    },
+                    "name": "sub-01_ses-test_task-fingerfootlips_bold_roi_mcf.nii_mean_reg.nii"
+                  },
+                  {
+                    "@id": "ark:99999/7196dc33-a304-4877-b30f-c3868c5f9eb6",
+                    "@type": "Dataset",
+                    "eg:generatedBy": {
+                      "@id": "ark:99999/52186ad3-c7ec-41d3-9e3d-83af015040f8",
+                      "@type": "eg:Computation",
+                      "eg:usedDataset": {
+                        "@id": "ark:99999/ee9dd053-d520-4505-bf23-0e6e2b75dbb6",
+                        "@type": "Dataset",
+                        "eg:generatedBy": {
+                          "@id": "ark:99999/b9c90f96-091e-4dc3-9092-18da0a7a3e2a",
+                          "@type": "eg:Computation",
+                          "eg:usedSoftware": "ark:99999/d63e3e1f-d34d-454e-bfce-90cb463d1f28",
+                          "name": "Computation sub-01_t1w_preproc_brain_pve_2.nii.gz"
+                        },
+                        "name": "sub-01_t1w_preproc_brain_pve_2.nii.gz"
+                      },
+                      "eg:usedSoftware": "ark:99999/f57caf8e-681f-4d08-8dd4-5e166ddd799c",
+                      "name": "Computation sub-01_t1w_preproc_brain_pve_2_thresh.nii.gz"
+                    },
+                    "name": "sub-01_t1w_preproc_brain_pve_2_thresh.nii.gz"
+                  }
+                ],
+                "eg:usedSoftware": "ark:99999/580f9454-5906-48c6-a868-442defce66b2",
+                "name": "Computation sub-01_ses-test_task-fingerfootlips_bold_roi_mcf.nii_mean_reg_flirt.mat"
+              },
+              "name": "sub-01_ses-test_task-fingerfootlips_bold_roi_mcf.nii_mean_reg_flirt.mat"
+            },
+            {
+              "@id": "ark:99999/e016b784-34da-451f-8e2b-e883b2674f00",
+              "@type": "Dataset",
+              "eg:generatedBy": {
+                "@id": "ark:99999/7857dc3f-68ef-4675-89b2-4ae624fb9d35",
+                "@type": "eg:Computation",
+                "eg:usedDataset": {
+                  "@id": "ark:99999/fc43750a-83b1-4556-9557-748fc3b2526b",
+                  "@type": "Dataset",
+                  "eg:generatedBy": {
+                    "@id": "ark:99999/f5c430f9-f381-4d9d-9490-775f58168bd1",
+                    "@type": "eg:Computation",
+                    "eg:usedDataset": {
+                      "@id": "ark:99999/0b843e47-ea12-40e0-a804-7b69de1873e7",
+                      "@type": "Dataset",
+                      "author": "Michael Notter",
+                      "name": "sub-01_ses-test_task-fingerfootlips_bold.nii.gz"
+                    },
+                    "eg:usedSoftware": "ark:99999/a2721618-758a-407a-8524-ee895b9fedfd",
+                    "name": "Computation sub-01_ses-test_task-fingerfootlips_bold_roi.nii"
+                  },
+                  "name": "sub-01_ses-test_task-fingerfootlips_bold_roi.nii"
+                },
+                "eg:usedSoftware": "ark:99999/5959320e-e64a-4838-abc4-fa23a23fbd34",
+                "name": "Computation sub-01_ses-test_task-fingerfootlips_bold_roi_mcf.nii_mean_reg.nii"
+              },
+              "name": "sub-01_ses-test_task-fingerfootlips_bold_roi_mcf.nii_mean_reg.nii"
+            }
+          ],
+          "eg:usedSoftware": "ark:99999/9e475423-1173-4d10-bd62-feb6838076b9",
+          "name": "Computation sub-01_ses-test_task-fingerfootlips_bold_roi_mcf.nii_mean_reg_flirt.nii.gz"
+        },
+        "name": "sub-01_ses-test_task-fingerfootlips_bold_roi_mcf.nii_mean_reg_flirt.nii.gz"
+      },
+      {
+        "@id": "ark:99999/f82b97ff-8e23-45f0-b34f-a2569b2aff74",
+        "@type": "Dataset",
+        "eg:generatedBy": {
+          "@id": "ark:99999/3092e41c-0351-4161-83e9-b46d42be2e35",
+          "@type": "eg:Computation",
+          "eg:usedDataset": [
+            {
+              "@id": "ark:99999/ea9c938a-cc49-4946-a495-603cd690891e",
+              "@type": "Dataset",
+              "eg:generatedBy": {
+                "@id": "ark:99999/96adc94e-982f-498e-b8af-4340c59d84f5",
+                "@type": "eg:Computation",
+                "eg:usedDataset": [
+                  {
+                    "@id": "ark:99999/b59f7d36-bcf9-4822-b9cb-2822b193aa6f",
+                    "@type": "Dataset",
+                    "eg:generatedBy": {
+                      "@id": "ark:99999/13e15dc6-6063-4b6c-b94e-5a6f5c3742dd",
+                      "@type": "eg:Computation",
+                      "eg:usedDataset": {
+                        "@id": "ark:99999/b585df03-d73a-443f-b9f5-4c713bbd9901",
+                        "@type": "Dataset",
+                        "author": "Michael Notter",
+                        "name": "sub-01_t1w_preproc.nii.gz"
+                      },
+                      "eg:usedSoftware": "ark:99999/109e8c56-caa1-4c6c-a073-e0b02f982bc6",
+                      "name": "Computation sub-01_t1w_preproc_brain.nii.gz"
+                    },
+                    "name": "sub-01_t1w_preproc_brain.nii.gz"
+                  },
+                  {
+                    "@id": "ark:99999/e016b784-34da-451f-8e2b-e883b2674f00",
+                    "@type": "Dataset",
+                    "eg:generatedBy": {
+                      "@id": "ark:99999/7857dc3f-68ef-4675-89b2-4ae624fb9d35",
+                      "@type": "eg:Computation",
+                      "eg:usedDataset": {
+                        "@id": "ark:99999/fc43750a-83b1-4556-9557-748fc3b2526b",
+                        "@type": "Dataset",
+                        "eg:generatedBy": {
+                          "@id": "ark:99999/f5c430f9-f381-4d9d-9490-775f58168bd1",
+                          "@type": "eg:Computation",
+                          "eg:usedDataset": {
+                            "@id": "ark:99999/0b843e47-ea12-40e0-a804-7b69de1873e7",
+                            "@type": "Dataset",
+                            "author": "Michael Notter",
+                            "name": "sub-01_ses-test_task-fingerfootlips_bold.nii.gz"
+                          },
+                          "eg:usedSoftware": "ark:99999/a2721618-758a-407a-8524-ee895b9fedfd",
+                          "name": "Computation sub-01_ses-test_task-fingerfootlips_bold_roi.nii"
+                        },
+                        "name": "sub-01_ses-test_task-fingerfootlips_bold_roi.nii"
+                      },
+                      "eg:usedSoftware": "ark:99999/5959320e-e64a-4838-abc4-fa23a23fbd34",
+                      "name": "Computation sub-01_ses-test_task-fingerfootlips_bold_roi_mcf.nii_mean_reg.nii"
+                    },
+                    "name": "sub-01_ses-test_task-fingerfootlips_bold_roi_mcf.nii_mean_reg.nii"
+                  }
+                ],
+                "eg:usedSoftware": "ark:99999/45f4b9a9-f14d-4180-ae99-39fe4a9f712d",
+                "name": "Computation sub-01_ses-test_task-fingerfootlips_bold_roi_mcf.nii_mean_reg_flirt.mat"
+              },
+              "name": "sub-01_ses-test_task-fingerfootlips_bold_roi_mcf.nii_mean_reg_flirt.mat"
+            },
+            {
+              "@id": "ark:99999/b585df03-d73a-443f-b9f5-4c713bbd9901",
+              "@type": "Dataset",
+              "author": "Michael Notter",
+              "name": "sub-01_t1w_preproc.nii.gz"
+            },
+            {
+              "@id": "ark:99999/e016b784-34da-451f-8e2b-e883b2674f00",
+              "@type": "Dataset",
+              "eg:generatedBy": {
+                "@id": "ark:99999/7857dc3f-68ef-4675-89b2-4ae624fb9d35",
+                "@type": "eg:Computation",
+                "eg:usedDataset": {
+                  "@id": "ark:99999/fc43750a-83b1-4556-9557-748fc3b2526b",
+                  "@type": "Dataset",
+                  "eg:generatedBy": {
+                    "@id": "ark:99999/f5c430f9-f381-4d9d-9490-775f58168bd1",
+                    "@type": "eg:Computation",
+                    "eg:usedDataset": {
+                      "@id": "ark:99999/0b843e47-ea12-40e0-a804-7b69de1873e7",
+                      "@type": "Dataset",
+                      "author": "Michael Notter",
+                      "name": "sub-01_ses-test_task-fingerfootlips_bold.nii.gz"
+                    },
+                    "eg:usedSoftware": "ark:99999/a2721618-758a-407a-8524-ee895b9fedfd",
+                    "name": "Computation sub-01_ses-test_task-fingerfootlips_bold_roi.nii"
+                  },
+                  "name": "sub-01_ses-test_task-fingerfootlips_bold_roi.nii"
+                },
+                "eg:usedSoftware": "ark:99999/5959320e-e64a-4838-abc4-fa23a23fbd34",
+                "name": "Computation sub-01_ses-test_task-fingerfootlips_bold_roi_mcf.nii_mean_reg.nii"
+              },
+              "name": "sub-01_ses-test_task-fingerfootlips_bold_roi_mcf.nii_mean_reg.nii"
+            },
+            {
+              "@id": "ark:99999/7196dc33-a304-4877-b30f-c3868c5f9eb6",
+              "@type": "Dataset",
+              "eg:generatedBy": {
+                "@id": "ark:99999/52186ad3-c7ec-41d3-9e3d-83af015040f8",
+                "@type": "eg:Computation",
+                "eg:usedDataset": {
+                  "@id": "ark:99999/ee9dd053-d520-4505-bf23-0e6e2b75dbb6",
+                  "@type": "Dataset",
+                  "eg:generatedBy": {
+                    "@id": "ark:99999/b9c90f96-091e-4dc3-9092-18da0a7a3e2a",
+                    "@type": "eg:Computation",
+                    "eg:usedSoftware": "ark:99999/d63e3e1f-d34d-454e-bfce-90cb463d1f28",
+                    "name": "Computation sub-01_t1w_preproc_brain_pve_2.nii.gz"
+                  },
+                  "name": "sub-01_t1w_preproc_brain_pve_2.nii.gz"
+                },
+                "eg:usedSoftware": "ark:99999/f57caf8e-681f-4d08-8dd4-5e166ddd799c",
+                "name": "Computation sub-01_t1w_preproc_brain_pve_2_thresh.nii.gz"
+              },
+              "name": "sub-01_t1w_preproc_brain_pve_2_thresh.nii.gz"
+            }
+          ],
+          "eg:usedSoftware": "ark:99999/580f9454-5906-48c6-a868-442defce66b2",
+          "name": "Computation sub-01_ses-test_task-fingerfootlips_bold_roi_mcf.nii_mean_reg_flirt.mat"
+        },
+        "name": "sub-01_ses-test_task-fingerfootlips_bold_roi_mcf.nii_mean_reg_flirt.mat"
+      },
+      {
+        "@id": "ark:99999/a93fbb97-1e88-419e-aae1-a5c552efb86d",
+        "@type": "Dataset",
+        "eg:generatedBy": {
+          "@id": "ark:99999/f80c5b7a-82aa-48f9-b4fe-27ffa26f0fc1",
+          "@type": "eg:Computation",
+          "eg:usedDataset": [
+            {
+              "@id": "ark:99999/f1d42e4a-be41-4f29-a676-7490c6639200",
+              "@type": "Dataset",
+              "eg:generatedBy": {
+                "@id": "ark:99999/d14fbcf1-dd38-450d-81ea-f5fdbbf9c391",
+                "@type": "eg:Computation",
+                "eg:usedDataset": [
+                  {
+                    "@id": "ark:99999/f82b97ff-8e23-45f0-b34f-a2569b2aff74",
+                    "@type": "Dataset",
+                    "eg:generatedBy": {
+                      "@id": "ark:99999/3092e41c-0351-4161-83e9-b46d42be2e35",
+                      "@type": "eg:Computation",
+                      "eg:usedDataset": [
+                        {
+                          "@id": "ark:99999/ea9c938a-cc49-4946-a495-603cd690891e",
+                          "@type": "Dataset",
+                          "eg:generatedBy": {
+                            "@id": "ark:99999/96adc94e-982f-498e-b8af-4340c59d84f5",
+                            "@type": "eg:Computation",
+                            "eg:usedDataset": [
+                              {
+                                "@id": "ark:99999/b59f7d36-bcf9-4822-b9cb-2822b193aa6f",
+                                "@type": "Dataset",
+                                "eg:generatedBy": {
+                                  "@id": "ark:99999/13e15dc6-6063-4b6c-b94e-5a6f5c3742dd",
+                                  "@type": "eg:Computation",
+                                  "eg:usedDataset": {
+                                    "@id": "ark:99999/b585df03-d73a-443f-b9f5-4c713bbd9901",
+                                    "@type": "Dataset",
+                                    "author": "Michael Notter",
+                                    "name": "sub-01_t1w_preproc.nii.gz"
+                                  },
+                                  "eg:usedSoftware": "ark:99999/109e8c56-caa1-4c6c-a073-e0b02f982bc6",
+                                  "name": "Computation sub-01_t1w_preproc_brain.nii.gz"
+                                },
+                                "name": "sub-01_t1w_preproc_brain.nii.gz"
+                              },
+                              {
+                                "@id": "ark:99999/e016b784-34da-451f-8e2b-e883b2674f00",
+                                "@type": "Dataset",
+                                "eg:generatedBy": {
+                                  "@id": "ark:99999/7857dc3f-68ef-4675-89b2-4ae624fb9d35",
+                                  "@type": "eg:Computation",
+                                  "eg:usedDataset": {
+                                    "@id": "ark:99999/fc43750a-83b1-4556-9557-748fc3b2526b",
+                                    "@type": "Dataset",
+                                    "eg:generatedBy": {
+                                      "@id": "ark:99999/f5c430f9-f381-4d9d-9490-775f58168bd1",
+                                      "@type": "eg:Computation",
+                                      "eg:usedDataset": {
+                                        "@id": "ark:99999/0b843e47-ea12-40e0-a804-7b69de1873e7",
+                                        "@type": "Dataset",
+                                        "author": "Michael Notter",
+                                        "name": "sub-01_ses-test_task-fingerfootlips_bold.nii.gz"
+                                      },
+                                      "eg:usedSoftware": "ark:99999/a2721618-758a-407a-8524-ee895b9fedfd",
+                                      "name": "Computation sub-01_ses-test_task-fingerfootlips_bold_roi.nii"
+                                    },
+                                    "name": "sub-01_ses-test_task-fingerfootlips_bold_roi.nii"
+                                  },
+                                  "eg:usedSoftware": "ark:99999/5959320e-e64a-4838-abc4-fa23a23fbd34",
+                                  "name": "Computation sub-01_ses-test_task-fingerfootlips_bold_roi_mcf.nii_mean_reg.nii"
+                                },
+                                "name": "sub-01_ses-test_task-fingerfootlips_bold_roi_mcf.nii_mean_reg.nii"
+                              }
+                            ],
+                            "eg:usedSoftware": "ark:99999/45f4b9a9-f14d-4180-ae99-39fe4a9f712d",
+                            "name": "Computation sub-01_ses-test_task-fingerfootlips_bold_roi_mcf.nii_mean_reg_flirt.mat"
+                          },
+                          "name": "sub-01_ses-test_task-fingerfootlips_bold_roi_mcf.nii_mean_reg_flirt.mat"
+                        },
+                        {
+                          "@id": "ark:99999/b585df03-d73a-443f-b9f5-4c713bbd9901",
+                          "@type": "Dataset",
+                          "author": "Michael Notter",
+                          "name": "sub-01_t1w_preproc.nii.gz"
+                        },
+                        {
+                          "@id": "ark:99999/e016b784-34da-451f-8e2b-e883b2674f00",
+                          "@type": "Dataset",
+                          "eg:generatedBy": {
+                            "@id": "ark:99999/7857dc3f-68ef-4675-89b2-4ae624fb9d35",
+                            "@type": "eg:Computation",
+                            "eg:usedDataset": {
+                              "@id": "ark:99999/fc43750a-83b1-4556-9557-748fc3b2526b",
+                              "@type": "Dataset",
+                              "eg:generatedBy": {
+                                "@id": "ark:99999/f5c430f9-f381-4d9d-9490-775f58168bd1",
+                                "@type": "eg:Computation",
+                                "eg:usedDataset": {
+                                  "@id": "ark:99999/0b843e47-ea12-40e0-a804-7b69de1873e7",
+                                  "@type": "Dataset",
+                                  "author": "Michael Notter",
+                                  "name": "sub-01_ses-test_task-fingerfootlips_bold.nii.gz"
+                                },
+                                "eg:usedSoftware": "ark:99999/a2721618-758a-407a-8524-ee895b9fedfd",
+                                "name": "Computation sub-01_ses-test_task-fingerfootlips_bold_roi.nii"
+                              },
+                              "name": "sub-01_ses-test_task-fingerfootlips_bold_roi.nii"
+                            },
+                            "eg:usedSoftware": "ark:99999/5959320e-e64a-4838-abc4-fa23a23fbd34",
+                            "name": "Computation sub-01_ses-test_task-fingerfootlips_bold_roi_mcf.nii_mean_reg.nii"
+                          },
+                          "name": "sub-01_ses-test_task-fingerfootlips_bold_roi_mcf.nii_mean_reg.nii"
+                        },
+                        {
+                          "@id": "ark:99999/7196dc33-a304-4877-b30f-c3868c5f9eb6",
+                          "@type": "Dataset",
+                          "eg:generatedBy": {
+                            "@id": "ark:99999/52186ad3-c7ec-41d3-9e3d-83af015040f8",
+                            "@type": "eg:Computation",
+                            "eg:usedDataset": {
+                              "@id": "ark:99999/ee9dd053-d520-4505-bf23-0e6e2b75dbb6",
+                              "@type": "Dataset",
+                              "eg:generatedBy": {
+                                "@id": "ark:99999/b9c90f96-091e-4dc3-9092-18da0a7a3e2a",
+                                "@type": "eg:Computation",
+                                "eg:usedSoftware": "ark:99999/d63e3e1f-d34d-454e-bfce-90cb463d1f28",
+                                "name": "Computation sub-01_t1w_preproc_brain_pve_2.nii.gz"
+                              },
+                              "name": "sub-01_t1w_preproc_brain_pve_2.nii.gz"
+                            },
+                            "eg:usedSoftware": "ark:99999/f57caf8e-681f-4d08-8dd4-5e166ddd799c",
+                            "name": "Computation sub-01_t1w_preproc_brain_pve_2_thresh.nii.gz"
+                          },
+                          "name": "sub-01_t1w_preproc_brain_pve_2_thresh.nii.gz"
+                        }
+                      ],
+                      "eg:usedSoftware": "ark:99999/580f9454-5906-48c6-a868-442defce66b2",
+                      "name": "Computation sub-01_ses-test_task-fingerfootlips_bold_roi_mcf.nii_mean_reg_flirt.mat"
+                    },
+                    "name": "sub-01_ses-test_task-fingerfootlips_bold_roi_mcf.nii_mean_reg_flirt.mat"
+                  },
+                  {
+                    "@id": "ark:99999/b59f7d36-bcf9-4822-b9cb-2822b193aa6f",
+                    "@type": "Dataset",
+                    "eg:generatedBy": {
+                      "@id": "ark:99999/13e15dc6-6063-4b6c-b94e-5a6f5c3742dd",
+                      "@type": "eg:Computation",
+                      "eg:usedDataset": {
+                        "@id": "ark:99999/b585df03-d73a-443f-b9f5-4c713bbd9901",
+                        "@type": "Dataset",
+                        "author": "Michael Notter",
+                        "name": "sub-01_t1w_preproc.nii.gz"
+                      },
+                      "eg:usedSoftware": "ark:99999/109e8c56-caa1-4c6c-a073-e0b02f982bc6",
+                      "name": "Computation sub-01_t1w_preproc_brain.nii.gz"
+                    },
+                    "name": "sub-01_t1w_preproc_brain.nii.gz"
+                  },
+                  {
+                    "@id": "ark:99999/5949655c-0d1a-45ab-82a2-75659e44c61e",
+                    "@type": "Dataset",
+                    "eg:generatedBy": {
+                      "@id": "ark:99999/27940194-3108-4b01-8a8a-53c6950f984f",
+                      "@type": "eg:Computation",
+                      "eg:usedDataset": {
+                        "@id": "ark:99999/cb03d57f-a3c5-4f43-9039-3302ec96c2a6",
+                        "@type": "Dataset",
+                        "eg:generatedBy": {
+                          "@id": "ark:99999/1e2dfee3-9c61-405b-af55-e1e8e8693bd3",
+                          "@type": "eg:Computation",
+                          "eg:usedDataset": {
+                            "@id": "ark:99999/fc43750a-83b1-4556-9557-748fc3b2526b",
+                            "@type": "Dataset",
+                            "eg:generatedBy": {
+                              "@id": "ark:99999/f5c430f9-f381-4d9d-9490-775f58168bd1",
+                              "@type": "eg:Computation",
+                              "eg:usedDataset": {
+                                "@id": "ark:99999/0b843e47-ea12-40e0-a804-7b69de1873e7",
+                                "@type": "Dataset",
+                                "author": "Michael Notter",
+                                "name": "sub-01_ses-test_task-fingerfootlips_bold.nii.gz"
+                              },
+                              "eg:usedSoftware": "ark:99999/a2721618-758a-407a-8524-ee895b9fedfd",
+                              "name": "Computation sub-01_ses-test_task-fingerfootlips_bold_roi.nii"
+                            },
+                            "name": "sub-01_ses-test_task-fingerfootlips_bold_roi.nii"
+                          },
+                          "eg:usedSoftware": "ark:99999/5959320e-e64a-4838-abc4-fa23a23fbd34",
+                          "name": "Computation sub-01_ses-test_task-fingerfootlips_bold_roi_mcf.nii"
+                        },
+                        "name": "sub-01_ses-test_task-fingerfootlips_bold_roi_mcf.nii"
+                      },
+                      "eg:usedSoftware": "ark:99999/5be075d1-e2bb-4b2c-893d-5bc16337ad0b",
+                      "name": "Computation sub-01_ses-test_task-fingerfootlips_bold_roi_mcf_st.nii"
+                    },
+                    "name": "sub-01_ses-test_task-fingerfootlips_bold_roi_mcf_st.nii"
+                  }
+                ],
+                "eg:usedSoftware": "ark:99999/ef968151-2947-4727-ba8f-fc7d1f509775",
+                "name": "Computation sub-01_ses-test_task-fingerfootlips_bold_roi_mcf_st_flirt.nii"
+              },
+              "name": "sub-01_ses-test_task-fingerfootlips_bold_roi_mcf_st_flirt.nii"
+            },
+            {
+              "@id": "ark:99999/49275faa-e19c-4109-a943-da10afa92a7d",
+              "@type": "Dataset",
+              "eg:generatedBy": {
+                "@id": "ark:99999/8257854b-2847-4129-a272-03a45d782058",
+                "@type": "eg:Computation",
+                "eg:usedDataset": {
+                  "@id": "ark:99999/fc43750a-83b1-4556-9557-748fc3b2526b",
+                  "@type": "Dataset",
+                  "eg:generatedBy": {
+                    "@id": "ark:99999/f5c430f9-f381-4d9d-9490-775f58168bd1",
+                    "@type": "eg:Computation",
+                    "eg:usedDataset": {
+                      "@id": "ark:99999/0b843e47-ea12-40e0-a804-7b69de1873e7",
+                      "@type": "Dataset",
+                      "author": "Michael Notter",
+                      "name": "sub-01_ses-test_task-fingerfootlips_bold.nii.gz"
+                    },
+                    "eg:usedSoftware": "ark:99999/a2721618-758a-407a-8524-ee895b9fedfd",
+                    "name": "Computation sub-01_ses-test_task-fingerfootlips_bold_roi.nii"
+                  },
+                  "name": "sub-01_ses-test_task-fingerfootlips_bold_roi.nii"
+                },
+                "eg:usedSoftware": "ark:99999/5959320e-e64a-4838-abc4-fa23a23fbd34",
+                "name": "Computation sub-01_ses-test_task-fingerfootlips_bold_roi_mcf.nii.par"
+              },
+              "name": "sub-01_ses-test_task-fingerfootlips_bold_roi_mcf.nii.par"
+            }
+          ],
+          "eg:usedSoftware": "ark:99999/75641e3e-544e-488e-9689-f0170bd399a8",
+          "name": "Computation art.sub-01_ses-test_task-fingerfootlips_bold_roi_mcf_st_flirt_outliers.txt"
+        },
+        "name": "art.sub-01_ses-test_task-fingerfootlips_bold_roi_mcf_st_flirt_outliers.txt"
+      },
+      {
+        "@id": "ark:99999/4ac07932-1b09-4d9c-8da4-0febc2135088",
+        "@type": "Dataset",
+        "eg:generatedBy": {
+          "@id": "ark:99999/504c8b43-10e4-4534-9085-068865752b7a",
+          "@type": "eg:Computation",
+          "eg:usedDataset": [
+            {
+              "@id": "ark:99999/f1d42e4a-be41-4f29-a676-7490c6639200",
+              "@type": "Dataset",
+              "eg:generatedBy": {
+                "@id": "ark:99999/d14fbcf1-dd38-450d-81ea-f5fdbbf9c391",
+                "@type": "eg:Computation",
+                "eg:usedDataset": [
+                  {
+                    "@id": "ark:99999/f82b97ff-8e23-45f0-b34f-a2569b2aff74",
+                    "@type": "Dataset",
+                    "eg:generatedBy": {
+                      "@id": "ark:99999/3092e41c-0351-4161-83e9-b46d42be2e35",
+                      "@type": "eg:Computation",
+                      "eg:usedDataset": [
+                        {
+                          "@id": "ark:99999/ea9c938a-cc49-4946-a495-603cd690891e",
+                          "@type": "Dataset",
+                          "eg:generatedBy": {
+                            "@id": "ark:99999/96adc94e-982f-498e-b8af-4340c59d84f5",
+                            "@type": "eg:Computation",
+                            "eg:usedDataset": [
+                              {
+                                "@id": "ark:99999/b59f7d36-bcf9-4822-b9cb-2822b193aa6f",
+                                "@type": "Dataset",
+                                "eg:generatedBy": {
+                                  "@id": "ark:99999/13e15dc6-6063-4b6c-b94e-5a6f5c3742dd",
+                                  "@type": "eg:Computation",
+                                  "eg:usedDataset": {
+                                    "@id": "ark:99999/b585df03-d73a-443f-b9f5-4c713bbd9901",
+                                    "@type": "Dataset",
+                                    "author": "Michael Notter",
+                                    "name": "sub-01_t1w_preproc.nii.gz"
+                                  },
+                                  "eg:usedSoftware": "ark:99999/109e8c56-caa1-4c6c-a073-e0b02f982bc6",
+                                  "name": "Computation sub-01_t1w_preproc_brain.nii.gz"
+                                },
+                                "name": "sub-01_t1w_preproc_brain.nii.gz"
+                              },
+                              {
+                                "@id": "ark:99999/e016b784-34da-451f-8e2b-e883b2674f00",
+                                "@type": "Dataset",
+                                "eg:generatedBy": {
+                                  "@id": "ark:99999/7857dc3f-68ef-4675-89b2-4ae624fb9d35",
+                                  "@type": "eg:Computation",
+                                  "eg:usedDataset": {
+                                    "@id": "ark:99999/fc43750a-83b1-4556-9557-748fc3b2526b",
+                                    "@type": "Dataset",
+                                    "eg:generatedBy": {
+                                      "@id": "ark:99999/f5c430f9-f381-4d9d-9490-775f58168bd1",
+                                      "@type": "eg:Computation",
+                                      "eg:usedDataset": {
+                                        "@id": "ark:99999/0b843e47-ea12-40e0-a804-7b69de1873e7",
+                                        "@type": "Dataset",
+                                        "author": "Michael Notter",
+                                        "name": "sub-01_ses-test_task-fingerfootlips_bold.nii.gz"
+                                      },
+                                      "eg:usedSoftware": "ark:99999/a2721618-758a-407a-8524-ee895b9fedfd",
+                                      "name": "Computation sub-01_ses-test_task-fingerfootlips_bold_roi.nii"
+                                    },
+                                    "name": "sub-01_ses-test_task-fingerfootlips_bold_roi.nii"
+                                  },
+                                  "eg:usedSoftware": "ark:99999/5959320e-e64a-4838-abc4-fa23a23fbd34",
+                                  "name": "Computation sub-01_ses-test_task-fingerfootlips_bold_roi_mcf.nii_mean_reg.nii"
+                                },
+                                "name": "sub-01_ses-test_task-fingerfootlips_bold_roi_mcf.nii_mean_reg.nii"
+                              }
+                            ],
+                            "eg:usedSoftware": "ark:99999/45f4b9a9-f14d-4180-ae99-39fe4a9f712d",
+                            "name": "Computation sub-01_ses-test_task-fingerfootlips_bold_roi_mcf.nii_mean_reg_flirt.mat"
+                          },
+                          "name": "sub-01_ses-test_task-fingerfootlips_bold_roi_mcf.nii_mean_reg_flirt.mat"
+                        },
+                        {
+                          "@id": "ark:99999/b585df03-d73a-443f-b9f5-4c713bbd9901",
+                          "@type": "Dataset",
+                          "author": "Michael Notter",
+                          "name": "sub-01_t1w_preproc.nii.gz"
+                        },
+                        {
+                          "@id": "ark:99999/e016b784-34da-451f-8e2b-e883b2674f00",
+                          "@type": "Dataset",
+                          "eg:generatedBy": {
+                            "@id": "ark:99999/7857dc3f-68ef-4675-89b2-4ae624fb9d35",
+                            "@type": "eg:Computation",
+                            "eg:usedDataset": {
+                              "@id": "ark:99999/fc43750a-83b1-4556-9557-748fc3b2526b",
+                              "@type": "Dataset",
+                              "eg:generatedBy": {
+                                "@id": "ark:99999/f5c430f9-f381-4d9d-9490-775f58168bd1",
+                                "@type": "eg:Computation",
+                                "eg:usedDataset": {
+                                  "@id": "ark:99999/0b843e47-ea12-40e0-a804-7b69de1873e7",
+                                  "@type": "Dataset",
+                                  "author": "Michael Notter",
+                                  "name": "sub-01_ses-test_task-fingerfootlips_bold.nii.gz"
+                                },
+                                "eg:usedSoftware": "ark:99999/a2721618-758a-407a-8524-ee895b9fedfd",
+                                "name": "Computation sub-01_ses-test_task-fingerfootlips_bold_roi.nii"
+                              },
+                              "name": "sub-01_ses-test_task-fingerfootlips_bold_roi.nii"
+                            },
+                            "eg:usedSoftware": "ark:99999/5959320e-e64a-4838-abc4-fa23a23fbd34",
+                            "name": "Computation sub-01_ses-test_task-fingerfootlips_bold_roi_mcf.nii_mean_reg.nii"
+                          },
+                          "name": "sub-01_ses-test_task-fingerfootlips_bold_roi_mcf.nii_mean_reg.nii"
+                        },
+                        {
+                          "@id": "ark:99999/7196dc33-a304-4877-b30f-c3868c5f9eb6",
+                          "@type": "Dataset",
+                          "eg:generatedBy": {
+                            "@id": "ark:99999/52186ad3-c7ec-41d3-9e3d-83af015040f8",
+                            "@type": "eg:Computation",
+                            "eg:usedDataset": {
+                              "@id": "ark:99999/ee9dd053-d520-4505-bf23-0e6e2b75dbb6",
+                              "@type": "Dataset",
+                              "eg:generatedBy": {
+                                "@id": "ark:99999/b9c90f96-091e-4dc3-9092-18da0a7a3e2a",
+                                "@type": "eg:Computation",
+                                "eg:usedSoftware": "ark:99999/d63e3e1f-d34d-454e-bfce-90cb463d1f28",
+                                "name": "Computation sub-01_t1w_preproc_brain_pve_2.nii.gz"
+                              },
+                              "name": "sub-01_t1w_preproc_brain_pve_2.nii.gz"
+                            },
+                            "eg:usedSoftware": "ark:99999/f57caf8e-681f-4d08-8dd4-5e166ddd799c",
+                            "name": "Computation sub-01_t1w_preproc_brain_pve_2_thresh.nii.gz"
+                          },
+                          "name": "sub-01_t1w_preproc_brain_pve_2_thresh.nii.gz"
+                        }
+                      ],
+                      "eg:usedSoftware": "ark:99999/580f9454-5906-48c6-a868-442defce66b2",
+                      "name": "Computation sub-01_ses-test_task-fingerfootlips_bold_roi_mcf.nii_mean_reg_flirt.mat"
+                    },
+                    "name": "sub-01_ses-test_task-fingerfootlips_bold_roi_mcf.nii_mean_reg_flirt.mat"
+                  },
+                  {
+                    "@id": "ark:99999/b59f7d36-bcf9-4822-b9cb-2822b193aa6f",
+                    "@type": "Dataset",
+                    "eg:generatedBy": {
+                      "@id": "ark:99999/13e15dc6-6063-4b6c-b94e-5a6f5c3742dd",
+                      "@type": "eg:Computation",
+                      "eg:usedDataset": {
+                        "@id": "ark:99999/b585df03-d73a-443f-b9f5-4c713bbd9901",
+                        "@type": "Dataset",
+                        "author": "Michael Notter",
+                        "name": "sub-01_t1w_preproc.nii.gz"
+                      },
+                      "eg:usedSoftware": "ark:99999/109e8c56-caa1-4c6c-a073-e0b02f982bc6",
+                      "name": "Computation sub-01_t1w_preproc_brain.nii.gz"
+                    },
+                    "name": "sub-01_t1w_preproc_brain.nii.gz"
+                  },
+                  {
+                    "@id": "ark:99999/5949655c-0d1a-45ab-82a2-75659e44c61e",
+                    "@type": "Dataset",
+                    "eg:generatedBy": {
+                      "@id": "ark:99999/27940194-3108-4b01-8a8a-53c6950f984f",
+                      "@type": "eg:Computation",
+                      "eg:usedDataset": {
+                        "@id": "ark:99999/cb03d57f-a3c5-4f43-9039-3302ec96c2a6",
+                        "@type": "Dataset",
+                        "eg:generatedBy": {
+                          "@id": "ark:99999/1e2dfee3-9c61-405b-af55-e1e8e8693bd3",
+                          "@type": "eg:Computation",
+                          "eg:usedDataset": {
+                            "@id": "ark:99999/fc43750a-83b1-4556-9557-748fc3b2526b",
+                            "@type": "Dataset",
+                            "eg:generatedBy": {
+                              "@id": "ark:99999/f5c430f9-f381-4d9d-9490-775f58168bd1",
+                              "@type": "eg:Computation",
+                              "eg:usedDataset": {
+                                "@id": "ark:99999/0b843e47-ea12-40e0-a804-7b69de1873e7",
+                                "@type": "Dataset",
+                                "author": "Michael Notter",
+                                "name": "sub-01_ses-test_task-fingerfootlips_bold.nii.gz"
+                              },
+                              "eg:usedSoftware": "ark:99999/a2721618-758a-407a-8524-ee895b9fedfd",
+                              "name": "Computation sub-01_ses-test_task-fingerfootlips_bold_roi.nii"
+                            },
+                            "name": "sub-01_ses-test_task-fingerfootlips_bold_roi.nii"
+                          },
+                          "eg:usedSoftware": "ark:99999/5959320e-e64a-4838-abc4-fa23a23fbd34",
+                          "name": "Computation sub-01_ses-test_task-fingerfootlips_bold_roi_mcf.nii"
+                        },
+                        "name": "sub-01_ses-test_task-fingerfootlips_bold_roi_mcf.nii"
+                      },
+                      "eg:usedSoftware": "ark:99999/5be075d1-e2bb-4b2c-893d-5bc16337ad0b",
+                      "name": "Computation sub-01_ses-test_task-fingerfootlips_bold_roi_mcf_st.nii"
+                    },
+                    "name": "sub-01_ses-test_task-fingerfootlips_bold_roi_mcf_st.nii"
+                  }
+                ],
+                "eg:usedSoftware": "ark:99999/ef968151-2947-4727-ba8f-fc7d1f509775",
+                "name": "Computation sub-01_ses-test_task-fingerfootlips_bold_roi_mcf_st_flirt.nii"
+              },
+              "name": "sub-01_ses-test_task-fingerfootlips_bold_roi_mcf_st_flirt.nii"
+            },
+            {
+              "@id": "ark:99999/49275faa-e19c-4109-a943-da10afa92a7d",
+              "@type": "Dataset",
+              "eg:generatedBy": {
+                "@id": "ark:99999/8257854b-2847-4129-a272-03a45d782058",
+                "@type": "eg:Computation",
+                "eg:usedDataset": {
+                  "@id": "ark:99999/fc43750a-83b1-4556-9557-748fc3b2526b",
+                  "@type": "Dataset",
+                  "eg:generatedBy": {
+                    "@id": "ark:99999/f5c430f9-f381-4d9d-9490-775f58168bd1",
+                    "@type": "eg:Computation",
+                    "eg:usedDataset": {
+                      "@id": "ark:99999/0b843e47-ea12-40e0-a804-7b69de1873e7",
+                      "@type": "Dataset",
+                      "author": "Michael Notter",
+                      "name": "sub-01_ses-test_task-fingerfootlips_bold.nii.gz"
+                    },
+                    "eg:usedSoftware": "ark:99999/a2721618-758a-407a-8524-ee895b9fedfd",
+                    "name": "Computation sub-01_ses-test_task-fingerfootlips_bold_roi.nii"
+                  },
+                  "name": "sub-01_ses-test_task-fingerfootlips_bold_roi.nii"
+                },
+                "eg:usedSoftware": "ark:99999/5959320e-e64a-4838-abc4-fa23a23fbd34",
+                "name": "Computation sub-01_ses-test_task-fingerfootlips_bold_roi_mcf.nii.par"
+              },
+              "name": "sub-01_ses-test_task-fingerfootlips_bold_roi_mcf.nii.par"
+            }
+          ],
+          "eg:usedSoftware": "ark:99999/75641e3e-544e-488e-9689-f0170bd399a8",
+          "name": "Computation plot.sub-01_ses-test_task-fingerfootlips_bold_roi_mcf_st_flirt.svg"
+        },
+        "name": "plot.sub-01_ses-test_task-fingerfootlips_bold_roi_mcf_st_flirt.svg"
+      },
+      {
+        "@id": "ark:99999/49275faa-e19c-4109-a943-da10afa92a7d",
+        "@type": "Dataset",
+        "eg:generatedBy": {
+          "@id": "ark:99999/8257854b-2847-4129-a272-03a45d782058",
+          "@type": "eg:Computation",
+          "eg:usedDataset": {
+            "@id": "ark:99999/fc43750a-83b1-4556-9557-748fc3b2526b",
+            "@type": "Dataset",
+            "eg:generatedBy": {
+              "@id": "ark:99999/f5c430f9-f381-4d9d-9490-775f58168bd1",
+              "@type": "eg:Computation",
+              "eg:usedDataset": {
+                "@id": "ark:99999/0b843e47-ea12-40e0-a804-7b69de1873e7",
+                "@type": "Dataset",
+                "author": "Michael Notter",
+                "name": "sub-01_ses-test_task-fingerfootlips_bold.nii.gz"
+              },
+              "eg:usedSoftware": "ark:99999/a2721618-758a-407a-8524-ee895b9fedfd",
+              "name": "Computation sub-01_ses-test_task-fingerfootlips_bold_roi.nii"
+            },
+            "name": "sub-01_ses-test_task-fingerfootlips_bold_roi.nii"
+          },
+          "eg:usedSoftware": "ark:99999/5959320e-e64a-4838-abc4-fa23a23fbd34",
+          "name": "Computation sub-01_ses-test_task-fingerfootlips_bold_roi_mcf.nii.par"
+        },
+        "name": "sub-01_ses-test_task-fingerfootlips_bold_roi_mcf.nii.par"
+      },
+      {
+        "@id": "ark:99999/ead2b78b-cf38-4873-99bf-234534f3eb11",
+        "@type": "Dataset",
+        "eg:generatedBy": {
+          "@id": "ark:99999/6ce18bf6-4111-4eb2-b50a-402c4c71b1a1",
+          "@type": "eg:Computation",
+          "eg:usedSoftware": "ark:99999/a75e0504-4849-4b16-9794-47c47db8cc3f",
+          "name": "Computation ssub-01_ses-test_task-fingerfootlips_bold_roi_mcf_st_flirt.nii"
+        },
+        "name": "ssub-01_ses-test_task-fingerfootlips_bold_roi_mcf_st_flirt.nii"
+      }
+    ],
+    "eg:usedSoftware": "ark:99999/90d24bf2-99b5-4bfe-aca3-b396252420d7",
+    "name": "Computation sub-01_ses-test_task-fingerfootlips_bold_mean.nii.gz"
+  },
+  "name": "sub-01_ses-test_task-fingerfootlips_bold_mean.nii.gz"
+}
