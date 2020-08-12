@@ -2,8 +2,9 @@ import sys
 from pyld import jsonld
 from pyld.jsonld import JsonLdError
 import json
-from flask import Flask, render_template, jsonify
+from flask import Flask, render_template, jsonify, request
 import pandas as pd
+from auth import *
 
 
 
@@ -21,7 +22,7 @@ import requests
 class EverythingConverter(PathConverter):
     regex = '.*?'
 
-EG_URL = os.environ.get("EG_URL","http://eg/eg/")
+EG_URL = os.environ.get("EG_URL","https://clarklab.uvarc.io/evidencegraph/")
 
 
 
@@ -43,11 +44,14 @@ def hello():
 
 
 @app.route('/<everything:ark>')
+@token_required
 def test_page(ark):
     global elements
     elements = []
 
-    data_jsonld = requests.get(EG_URL + ark).json()
+    token = request.cookies.get("fairscapeAuth")
+
+    data_jsonld = requests.get(EG_URL + ark, headers = {"Authorization": token}).json()
 
     if 'error' in data_jsonld.keys():
         return data_jsonld['error']
@@ -78,7 +82,7 @@ def test_page(ark):
             nodes_element = {}
             nodes_element['id'] = counter
             nodes_element['@id'] = level['@id']
-            nodes_element['href'] = level['@id']  # href in cytoscape to open as a URI
+            nodes_element['href'] = 'https://clarklab.uvarc.io/mds/' + level['@id']  # href in cytoscape to open as a URI
             nodes_element['@type'] = level['@type'][0]
             nodes_element['type'] = level['@type'][0]  # @type cannot be retrieved as node(@type)
             nodes_element['name'] = level['http://schema.org/name'][0]['@value']
