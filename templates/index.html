@@ -44,6 +44,7 @@
 <div id="cy"></div>
 <script>
     let cytoscape_elements = fetch("https://clarklab.uvarc.io/viz/graph")
+    // https://clarklab.uvarc.io/viz/graph
         .then(response => response.json())
         .then((data) => {
             return data
@@ -106,13 +107,25 @@
             { // assign node color based on their type
                 selector: 'node[type = "http://schema.org/Dataset"]',
                 style: {
-                    'background-color': '#5ec9c9'
+                    'background-color': '#0066FF'
+                }
+            },
+            { // assign node color based on their type
+                selector: 'node[type = "http://schema.org/SoftwareSourceCode"]',
+                style: {
+                    'background-color': '#66CCFF'
+                }
+            },
+            { // assign node color based on their type
+                selector: 'node[type = "http://w3id.org/EVI#Software"]',
+                style: {
+                    'background-color': '#66CCFF'
                 }
             },
             {
                 selector: 'node[type = "http://w3id.org/EVI#Computation"]',
                 style: {
-                    'background-color': '#e1a4c2'
+                    'background-color': '#FFCC66'
                 }
             },
             {
