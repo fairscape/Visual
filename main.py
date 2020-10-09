@@ -44,7 +44,7 @@ def hello():
 
 
 @app.route('/<everything:ark>')
-@token_required
+@user_level_permission
 def test_page(ark):
     global elements
     elements = []
